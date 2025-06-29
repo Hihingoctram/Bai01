@@ -35,10 +35,21 @@ fun GreetingWithButton() {
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
-        Button(onClick = {
-            Toast.makeText(context, "xin chào", Toast.LENGTH_SHORT).show()
-        }) {
-            Text("Click me!")
+        Button(
+            onClick = {
+                Toast.makeText(context, "xin chào", Toast.LENGTH_SHORT).show()
+            },
+            modifier = Modifier.padding(bottom = 16.dp)
+        ) {
+            Text("Xin Chào")
+        }
+
+        Button(
+            onClick = {
+                Toast.makeText(context, "tạm biệt", Toast.LENGTH_SHORT).show()
+            }
+        ) {
+            Text("Tạm biệt")
         }
     }
 }
